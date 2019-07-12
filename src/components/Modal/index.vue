@@ -17,9 +17,9 @@ export default {
   name: 'Modal',
   data () {
     return {
-      modal: true,
+      modal: false,
       modalType: {
-        info: true,
+        info: false,
         success: false,
         warning: false,
         error: false,
@@ -134,7 +134,7 @@ export default {
       }
       .cancel {
         background-color: #fff;
-        color: @font2;
+        color: @font;
         border: 1px solid @border;
       }
     }

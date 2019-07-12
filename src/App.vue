@@ -18,5 +18,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+html{
+  height: 100vh;
+  width: 100vw;
+  background-color: @bgColor;
+}
+
 </style>

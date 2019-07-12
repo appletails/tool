@@ -1,42 +1,17 @@
 <template>
   <div>
-    <button @click="info()">info</button>
-    <button @click="alert()">alert</button>
-    <button @click="confirm()">confirm</button>
-    <button @click="$Modal.remove()">close</button>
+    <Button />
+    <Card />
   </div>
 </template>
 
 <script>
-import { cent, datetamp, timestamp } from '@/filters'
+import Button from '@/components/Button'
+import Card from '@/components/Card'
 export default {
-  filters: {
-    cent,
-    datetamp,
-    timestamp
-  },
-  data () {
-    return {
-    }
-  },
-  methods: {
-    confirm () {
-      this.$Modal.confirm('this is a confirm', 'this is a title', () => {
-        console.log('ok')
-      }, () => {
-        console.log('cencal')
-      })
-    },
-    info () {
-      this.$Modal.info('this is a info', 'this is a title', () => {
-        console.log('msg')
-      })
-    },
-    alert () {
-      this.$Modal.alert('this is a alert')
-    }
-  },
-  created () {
+  components: {
+    Button,
+    Card
   }
 }
 </script>

@@ -1,4 +1,12 @@
 # tool
+[TOC]
+
+## 简介
+自用手撸UI和一些配置
+
+## 更新记录
+* 2019/07/12
+    * 新增一个Card
 
 ## less全局配置（sass也可，同理）
 * 安装less<br>
@@ -9,7 +17,7 @@
     > npm install sass-resources-loader --save-dev
 
     2、在项目build文件夹里找到utils.js ，定位到下边代码
-    ```
+    ```javascript
     return {
         css: generateLoaders(),
         postcss: generateLoaders(),
@@ -21,7 +29,7 @@
     }
     ```
     2、把上面这句less: generateLoaders('less'),改成如下
-    ```
+    ```javascript
     less: generateLoaders('less').concat(
       {
         loader: 'sass-resources-loader',
@@ -33,15 +41,16 @@
     ```
 * 全局.less文件位置<br>
 `src/assets/css/global.less`
+
 ## 过滤器
 * 百分比保留两位小数
-```
+```javascript
 cent(int)
 /* 百分比保留两位小数 */
 ```
 
 * 时间戳转换日期
-```
+```javascript
 datetamp(time)
 /*
   时间戳转换日期
@@ -50,7 +59,7 @@ datetamp(time)
 ```
 
 * 日期转换时间戳
-```
+```javascript
 timestamp(data)
 /*
   日期转换时间戳
