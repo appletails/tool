@@ -94,8 +94,8 @@ export default {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 2rem;
+  max-width: 3rem;
   // min-height: 160px;
   background-color: #fff;
   border-radius: 4px;
@@ -104,21 +104,21 @@ export default {
   &-title {
     text-align: center;
     font-weight: bold;
-    font-size: 16px;
-    min-height: 30px;
-    line-height: 30px;
+    font-size: 0.16rem;
+    min-height: 0.3rem;
+    line-height: 0.3rem;
   }
   &-main {
     &-message {
       // min-height: 50px;
-      line-height: 30px;
-      font-size: 14px;
+      line-height: 0.3rem;
+      font-size: 0.14rem;
       text-align: center;
     }
     &-btn {
       .flex();
-      margin-top: 10px;
-      height: 34px;
+      margin-top: 0.1rem;
+      height: 0.34rem;
       button {
         flex: 1;
         height: 100%;
@@ -127,9 +127,9 @@ export default {
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 0.14rem;
         &:not(first-of-type) {
-          margin-left: 6px;
+          margin-left: 0.06rem;
         }
       }
       .cancel {

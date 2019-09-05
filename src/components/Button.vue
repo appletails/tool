@@ -12,11 +12,6 @@
 import { cent, datetamp, timestamp } from '@/filters'
 export default {
   name: 'Button',
-  filters: {
-    cent,
-    datetamp,
-    timestamp
-  },
   data () {
     return {
     }
@@ -47,8 +42,8 @@ export default {
 .tail_btn{
   background-color: #fff;
   color: #515a6e;
-  padding: 5px 15px;
-  font-size: 12px;
+  padding: 0.05rem 0.15rem;
+  font-size: 0.12rem;
   border-radius: 4px;
   text-align: center;
   border: 1px solid transparent;

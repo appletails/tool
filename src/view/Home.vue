@@ -1,21 +1,20 @@
 <template>
   <div>
     <Button />
-    <Card />
   </div>
 </template>
 
 <script>
-import Button from '@/components/Button'
-import Card from '@/components/Card'
+import Button from "@/components/Button";
 export default {
   components: {
-    Button,
-    Card
+    Button
+  },
+  created() {
+    
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
-
 </style>

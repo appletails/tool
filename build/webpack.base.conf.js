@@ -78,8 +78,8 @@ module.exports = {
       {
         test: /\.less$/,
         loader: "style-loader!css-loader!less-loader",
-        options:{
-          globalVars:{'@redd':'#ff5959'}
+        options: {
+          globalVars: { '@redd': '#ff5959' }
         }
       },
     ]
@@ -95,5 +95,10 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
+  },
+  externals: {
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    'vuex': 'Vuex',
   }
 }

@@ -6,6 +6,9 @@ import router from './router'
 
 import api from '@/common/api'
 import $Modal from '@/utils/Modal'
+import Modal from '@/components/Modal'
+import store from '@/store'
+Vue.component('Modal', Modal)
 Vue.use(api)
 Vue.use($Modal)
 
@@ -15,6 +18,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

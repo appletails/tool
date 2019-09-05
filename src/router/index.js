@@ -1,21 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/page/Home'
-import Search from '@/page/Search'
+import routerConfig from './router.config'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/Search',
-      name: 'Search',
-      component: Search
-    }
+    ...routerConfig.map(item => {
+      item.component = () => import(`@/view/${item.name}`)
+      return item
+    })
   ]
 })

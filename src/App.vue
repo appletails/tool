@@ -6,12 +6,8 @@
 </template>
 
 <script>
-import Modal from '@/components/Modal'
 export default {
   name: 'App',
-  components: {
-    Modal
-  },
   beforeUpdate () {
     this.$Modal.remove()
   }
@@ -19,9 +15,15 @@ export default {
 </script>
 
 <style lang="less">
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 html{
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   background-color: @bgColor;
 }
 
