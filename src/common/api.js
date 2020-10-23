@@ -1,9 +1,5 @@
-export default {
-  install: function (Vue) {
-    Vue.prototype.$account = {
-      test: function () {
-        return 'this is a test'
-      }
-    }
-  }
+import service from './http'
+
+export function getLoveSay () {
+	return service.get('/bot/loveSay')
 }

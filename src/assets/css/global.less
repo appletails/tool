@@ -5,7 +5,7 @@
 
 @title:#1f3349;
 @font:#808695;
-@border:#dcdee2;
+@border:#d9d9d9;
 @bgColor:#f4f7fb;
 
 .flex(
@@ -20,4 +20,34 @@
   align-items: @alignItem;
   flex-direction: @direction;
   align-content:@alignContent;
+}
+
+html{
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: @bgColor;
+}
+
+input, textarea {
+  width: 100%;
+  display: block;
+  border: .01rem solid @border;
+  padding: .04rem .11rem;
+  min-height: .32rem;
+  color: rgba(0,0,0,.65);
+  font-size: .14rem;
+  border-radius: .04rem;
+  background-color: #fff;
+  resize: none;
+  &::placeholder{
+    color: rgba(0,0,0,.45);
+  }
+  &:disabled{
+    cursor: no-drop
+  }
+  &:focus,&:hover{
+    outline: none;
+    border-color: @info;
+    border-right-width: 1px!important;
+  }
 }

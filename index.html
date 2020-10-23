@@ -8,16 +8,19 @@
     <script>
       function appResize(){
         let app = document.documentElement
-        let size = app.clientWidth / 3.75 + 'px'
-        app.style.fontSize = size
-      }
-      window.onload=function(){
-        appResize()
-        window.onresize=function(){
-          appResize()
+        if (app.clientWidth <= 750) {
+          let size = app.clientWidth / 3.75 + 'px'
+          app.style.fontSize = size
+        } else {
+          app.style.fontSize = '100px'
         }
       }
+      appResize()
+      window.onresize=function(){
+        appResize()
+      }
     </script>
+    <style>*{ font-family: '微软雅黑', Arial; box-sizing: border-box; margin: 0; padding: 0; font-size: .12rem;}</style>
   </head>
   <body>
     <div id="app"></div>

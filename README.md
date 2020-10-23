@@ -5,6 +5,19 @@
 自用手撸vue的一些基础配置
 
 ## 更新记录
+* 2020/10/23
+    * utils新增了dom滚动的方法
+    * utils新增了$px2rem方法，用于echart的option的自适应
+    * 新增了Chart的demo
+    * 新增了全局路由守卫demo
+    * 新增了axios的配置
+    * 新增了input的样式美化
+    * 调整了全局样式
+
+* 2020/10/22
+    * 新增了Loading和Spin两个loading组件
+    * 将rem的自适应添加了800px响应式
+
 * 2019/09/05
     * 删除了Card
     * 新增了计算html的rem的值来适配移动端的自适应
