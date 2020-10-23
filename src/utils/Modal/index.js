@@ -17,7 +17,7 @@ export default {
           timeout = title
           title = null
         }
-        ModalBus.$emit('alert', { title: title, message: message, timeout: timeout || 1000 })
+        ModalBus.$emit('alert', { title: title, message: message, timeout: timeout || 3000 })
       },
       confirm: function (message, title, callback, options) {
         if (typeof title === 'function') {

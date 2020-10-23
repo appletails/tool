@@ -100,7 +100,7 @@ export default {
   background-color: #fff;
   border-radius: 4px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
   &-title {
     text-align: center;
     font-weight: bold;
